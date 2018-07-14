@@ -2,7 +2,7 @@
 
 Name:           rubygem-%{gem_name}
 Version:        2.5.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Beautiful, minimal theme for Jekyll
 License:        MIT
 
@@ -62,6 +62,9 @@ cp -a .%{gem_dir}/* %{buildroot}%{gem_dir}/
 
 
 %changelog
+* Sat Jul 14 2018 Fedora Release Engineering <releng@fedoraproject.org> - 2.5.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
+
 * Mon Apr 23 2018 Fabio Valentini <decathorpe@gmail.com> - 2.5.0-1
 - Initial package
 
