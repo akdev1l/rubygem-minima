@@ -1,3 +1,4 @@
 /results_*
 /*.src.rpm
-/minima-*.gem
+/noarch
+/.build*

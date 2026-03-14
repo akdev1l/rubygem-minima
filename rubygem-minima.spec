@@ -1,4 +1,6 @@
+%bcond_with bootstrap
 %global gem_name minima
+
 
 Name:           rubygem-%{gem_name}
 Version:        2.5.2
@@ -14,6 +16,10 @@ BuildRequires:  rubygems-devel
 BuildRequires:  ruby(release)
 
 BuildArch:      noarch
+
+%if %{with bootstrap}
+%global __requires_exclude jekyll
+%endif
 
 %description
 A beautiful, minimal theme for Jekyll.
